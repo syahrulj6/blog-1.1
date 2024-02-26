@@ -1,0 +1,13 @@
+.post {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

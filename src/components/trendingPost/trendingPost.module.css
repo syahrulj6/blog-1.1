@@ -1,0 +1,115 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  padding-bottom: 80px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.top {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.title:hover {
+  color: gray;
+}
+
+.desc {
+  font-size: 0.9rem;
+}
+
+.desc:hover {
+  color: gray;
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    width: 100%;
+    padding: 20px 50px;
+    margin: auto;
+  }
+  .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .content {
+    width: 100%;
+    gap: 0;
+  }
+  .top {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    padding: 20px 30px 50px 30px;
+    margin: auto;
+  }
+  .content {
+    width: 100%;
+  }
+  .top {
+    margin: auto;
+    width: 100%;
+    height: 280px;
+  }
+  .bottom {
+    gap: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  .tagline {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  .title {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .top {
+    width: 100%;
+    height: 250px;
+  }
+}

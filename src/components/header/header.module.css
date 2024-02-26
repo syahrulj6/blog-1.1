@@ -1,0 +1,172 @@
+.container {
+  width: 100%;
+  z-index: 20;
+  position: fixed;
+  background-color: #fff;
+  left: 0;
+  box-shadow: 1px 1px #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 8rem;
+  /* margin-bottom: 200px; */
+}
+
+.logoContainer {
+  position: relative;
+  height: 60px;
+  width: 90px;
+}
+
+.searchBtn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 3rem 0 3rem;
+}
+
+.headingBtn {
+  position: relative;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.headingTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.searchContainer {
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  width: 40%;
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* align-items: center; */
+}
+
+.inputContainer {
+  /* width: 100%; */
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  background-color: white;
+  border: 1px solid black;
+  font-weight: normal;
+  width: 70%;
+  padding: 12px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.inputBtn {
+  background: #000;
+  color: white;
+  width: 30%;
+}
+
+.listContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 10px 20px;
+  overflow-y: scroll;
+}
+
+.listHeading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.listTitle {
+  text-decoration: underline;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.listTitle:hover {
+  color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  .searchContainer {
+    width: 50%;
+  }
+  .headingBtn {
+    width: 1rem;
+    height: 1rem;
+  }
+  .headingTitle {
+    font-size: 1.2rem;
+  }
+  .listHeading {
+    font-size: 1.1rem;
+  }
+  .listTitle {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    padding: 1rem 4rem;
+  }
+  .searchContainer {
+    width: 70%;
+  }
+  .headingBtn {
+    width: 1rem;
+    height: 1rem;
+  }
+  .headingTitle {
+    font-size: 1.2rem;
+  }
+  .listHeading {
+    font-size: 1.1rem;
+  }
+  .listTitle {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 1rem 1rem;
+  }
+  .searchContainer {
+    width: 70%;
+  }
+  .headingBtn {
+    width: 1rem;
+    height: 1rem;
+  }
+  .headingTitle {
+    font-size: 1.2rem;
+  }
+  .listHeading {
+    font-size: 1.1rem;
+  }
+  .listTitle {
+    font-size: 1rem;
+  }
+  .inputBtn {
+    background: #000;
+    color: white;
+    width: 30%;
+    font-size: 12px;
+  }
+}
