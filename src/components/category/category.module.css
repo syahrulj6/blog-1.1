@@ -1,12 +1,15 @@
 .category {
   text-transform: uppercase;
   font-weight: 700;
-  border: 1px solid black;
+  border: 1px solid white;
   padding: 4px 20px;
+  color: white;
+  background-color: black;
+  mix-blend-mode: difference;
   width: fit-content;
-  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
-  -webkit-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 6px 6px 0px 0px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 6px 6px 0px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 6px 6px 0px 0px rgba(255, 255, 255, 1);
 }
 
 .category:hover {
